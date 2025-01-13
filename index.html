@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Columns Layout</title>
+    <title>Tomato Times</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,9 +42,12 @@
             color: #333;
         }
         ul {
-            list-style-type: disc;
-            margin: 10px 0 0;
+            list-style-type: none; /* Remove default bullets */
             padding: 0;
+            margin: 0;
+        }
+        li {
+            margin: 10px 0;
         }
         .images {
             margin-top: 20px;
@@ -65,57 +68,107 @@
         .footer a:hover {
             text-decoration: underline;
         }
+        /* Style for links in the left column */
+        .left a {
+            color: white;
+            text-decoration: none;
+        }
+        .left a:hover {
+            text-decoration: underline;
+        }
+        .right a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .right a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="column left">
-            <h1>Focus areas</h1>
+            <h1>Focus Areas</h1>
             <ul>
-                <h3>Android apps</h3>
-                <h3>Educational products</h3>
+                <li><h3>Android Apps</h3></li>
+                <li><h3>Educational Products</h3></li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=qeazhDuJ1fI" target="_blank">
+                        Watch a YouTube Video
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="column middle">
             <h1>Fun from Tomato Times</h1>
             <ul>
-                <h3>Games for toddlers</h3>
-                <h3>Photography apps</h3>
-                <h3>Puzzles</h3>
-                <h3>Educational videos</h3>
-                <h3>Creativity applications</h3>
-                <h3>"Baby toy" applications</h3>
+                <li><h3>Games for Toddlers</h3></li>
+                <li><h3>Photography Apps</h3></li>
+                <li><h3>Puzzles</h3></li>
+                <li><h3>Educational Videos</h3></li>
+                <li><h3>Creativity Applications</h3></li>
+                <li><h3>"Baby Toy" Applications</h3></li>
             </ul>
             <div class="images">
                 <img src="./images/tt1.jpg" alt="cartoon">
-                <img src="./images/tt1.jpg" alt="cartoon">
+                <img src="./images/tt2.jpg" alt="cartoon">
             </div>
-
-	<div class="column middle">
-	About TomatoTimes
-
-	TomatoTimes was started by my daughter and I.  The name originated from my daughter's cartoon strip entitled "Tomato Times" that was imagined to be from a fictional newspaper.  She made the cartoon in the Brevard Art Museum summer camp near the chocolate shop.  She was seven when she drew the cartoon.  I (Dad) liked the name and had some TomatoTimes T-shirts and pens made.  The T-shirts say "Tomato Times, Staff".  We write the software together.  
-		</div>
-
+            <div>
+                <h2>About Tomato Times</h2>
+                <p>
+                    TomatoTimes was started by my daughter and I. The name originated from my daughter's cartoon strip entitled 
+                    "Tomato Times" that was imagined to be from a fictional newspaper. She made the cartoon in the Brevard Art 
+                    Museum summer camp near the chocolate shop. She was seven when she drew the cartoon. I (Dad) liked the name 
+                    and had some TomatoTimes T-shirts and pens made. The T-shirts say "Tomato Times, Staff". We write the software 
+                    together.
+                </p>
+            </div>
             <div class="footer">
-              <a href="about.html">About Us</a>
-	      <a href="privacy-policy.html">Privacy Policy</a>
-	      <a href="data-safety.html">Data Safety</a>
-              <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="data-safety.html">Data Safety</a>
+                <a href="contact.html">Contact Us</a>
             </div>
         </div>
         <div class="column right">
-            <h1>Featured products</h1>
+            <h1>Featured Products</h1>
+            <p>These applications are available in the Google Android Marketplace:</p>
             <ul>
-                <h3>Keepers</h3>
-                <h3>PiP Cam</h3>
-                <h3>Jump to website</h3>
-                <h3>Happy Hanukkah game (free)</h3>
-                <h3>Candy Cane Christmas (free)</h3>
-                <h3>Fashion Photo Shoot</h3>
+                <li><a href="https://play.google.com/store/apps/details?id=com.tomatotimes.keepers" target="_blank"><h3>Keepers</h3></a></li>
+                <p>
+                    Keepers is a password generator using a secret passphrase that you provide. 
+                    Passwords are given simple names such as "a" or "b" so they can be written "in the open" without revealing any information.
+                </p>
+                <li><a href="https://play.google.com/store/apps/details?id=com.tomatotimes.pipcam" target="_blank"><h3>PiP Cam</h3></a></li>
+                <p>
+                    PiP Cam is a picture-in-picture viewer. It produces a window in which the view of the camera is visible while using other applications.
+                </p>
+                <li><a href="https://play.google.com/store/apps/details?id=com.tomatotimes.website" target="_blank"><h3>Website</h3></a></li>
+                <p>
+                    Easy-to-use dedicated launcher that takes you to a favorite website. Saves time.
+                </p>
+                <li><a href="https://play.google.com/store/apps/details?id=com.tomatotimes.happyhanukkah" target="_blank"><h3>Happy Hanukkah Game (Free)</h3></a></li>
+                <p>
+                    A holiday game to entertain children. 
+                    <a href="https://www.youtube.com/watch?v=6WaLaDeGndI" target="_blank">YouTube Demo</a>
+                </p>
+                <li><a href="https://play.google.com/store/apps/details?id=com.tomatotimes.candycanechristmas" target="_blank"><h3>Candy Cane Christmas (Free)</h3></a></li>
+                <p>
+                    A holiday game to entertain children. 
+                    <a href="https://www.youtube.com/watch?v=L8gVrh2zsMo" target="_blank">YouTube Demo</a>
+                </p>
+                <li><a href="https://play.google.com/store/apps/details?id=com.example.fashionphotoshoot" target="_blank"><h3>Fashion Photo Shoot</h3></a></li>
+                <p>
+                    Takes fashion photos every 10 seconds as you pose. 
+                    <a href="https://www.youtube.com/watch?v=xiHdUoSjUW0" target="_blank">YouTube Demo</a>
+                </p>
+                <li><a href="https://play.google.com/store/apps/details?id=com.example.wiggletunes" target="_blank"><h3>WiggleTunes</h3></a></li>
+                <p>
+                    A silly game for children 
+                    <a href="https://www.youtube.com/watch?v=nEavVmEJUFc" target="_blank">YouTube Demo</a>
+                </p>
             </ul>
         </div>
     </div>
-
 </body>
 </html>
